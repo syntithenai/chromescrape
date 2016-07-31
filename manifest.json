@@ -1,0 +1,37 @@
+{
+	"manifest_version": 2,
+	"version": "0.1",
+	"name": "Bank Scraper",
+	"short_name": "Bank Scraper",
+	"description": "Tool for data extraction from websites",
+	"permissions": ["<all_urls>", "tabs", "notifications", "storage", "unlimitedStorage", "downloads","declarativeContent"],
+	"icons": {
+		"16": "assets/images/icon16.png",
+		"48": "assets/images/icon48.png",
+		"128": "assets/images/icon128.png"
+	},
+	"web_accessible_resources": [
+		"assets/images/icon16.png",
+		"assets/images/icon48.png",
+		"assets/images/icon128.png",
+		"assets/images/icon19.png",
+		"assets/images/icon38.png"
+	],
+	"page_action" : {
+		"default_icon" : "assets/images/icon16.png",
+		"default_title" : "abc website!"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": [
+				"content_script.js"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"background": {
+		"scripts": ["background_script.js"],
+		"persistent": false
+	}
+}

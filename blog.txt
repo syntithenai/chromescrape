@@ -1,0 +1,22 @@
+so I want graphs and AI on my financial data
+I want my financial AI to 
+- know how much I typically spend and how much I typically earn.
+- let me know where I am on the financial balance curve
+- notify me of any irregularities or problems
+- ensure that I review my transactions on a regular basis
+
+and I DON'T WANT to type in transactions
+
+there are lots of services that will scrape your bank details for you
+IF YOU GIVE THEM YOUR INTERNET BANKING LOGIN
+
+hmmmmm
+
+Enter bankscrapechrome.
+
+A chrome extension that will drive the process of scraping your bank from a currently active browser session.
+Seeing as how we're using the current browser, we can login first.
+
+Not a complete solution to automation (although in most cases login can be scripted too) but sufficient to make it a one input operation to import data from a given bank into your application.
+
+Using javascript to engage with the DOM of the bank site within a current browser session, the scrape is indistinguishable from a real person clicking through the pages.
