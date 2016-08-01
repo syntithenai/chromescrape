@@ -4,7 +4,7 @@
 	"name": "Bank Scraper",
 	"short_name": "Bank Scraper",
 	"description": "Tool for data extraction from websites",
-	"permissions": ["<all_urls>", "tabs", "notifications", "storage", "unlimitedStorage", "downloads","declarativeContent"],
+	"permissions": ["<all_urls>", "tabs", "storage", "unlimitedStorage", "downloads","declarativeContent"],
 	"icons": {
 		"16": "assets/images/icon16.png",
 		"48": "assets/images/icon48.png",
@@ -17,9 +17,9 @@
 		"assets/images/icon19.png",
 		"assets/images/icon38.png"
 	],
-	"page_action" : {
-		"default_icon" : "assets/images/icon16.png",
-		"default_title" : "abc website!"
+	"browser_action": {
+		"default_icon": "assets/images/icon16.png",
+		"default_popup": "popup.html"
 	},
 	"content_scripts": [
 		{
